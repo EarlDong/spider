@@ -14,7 +14,7 @@ public class app {
 //		for(int i=0;i<=250;i=i+25)
 //		{
 //		String url = "https://movie.douban.com/top250?start='+ i +'&filter=";
-		String url = "https://movie.douban.com/top250?start=0&filter=";
+		String url = "https://movie.douban.com/top250?start=25&filter=";
 		
 		//抓取文档
 		try {
@@ -23,10 +23,10 @@ public class app {
 			Elements es = doc.select(".grid_view .item");
 			System.out.println(es.size());
 		//创建一个电影的列表
-			ArrayList<film> list = new ArrayList<>();
+//			ArrayList<film> list = new ArrayList<>();
 			
 			for (Element e :es) {
-				film f = new film();
+//				film f = new film();
 				//每一部电影
 				Element t = e.select(".title").first();
 				String num = e.select(".star span").last().text();
