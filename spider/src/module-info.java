@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author hyjxb
- *
- */
-module spider {
-}
